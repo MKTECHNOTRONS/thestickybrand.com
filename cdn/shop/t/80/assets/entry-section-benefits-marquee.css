@@ -1,0 +1,134 @@
+.vo-benefits-marquee {
+    overflow: hidden;
+    padding: 15px 0;
+    background-color: #000;
+    background-color: var(--black)
+}
+
+@media (min-width:1000px) {
+    .vo-benefits-marquee {
+        padding: 25px 0
+    }
+}
+
+.vo-benefits-marquee__inner {
+    display: flex;
+    gap: 30px
+}
+
+@media (min-width:1000px) {
+    .vo-benefits-marquee__inner {
+        gap: 45px
+    }
+}
+
+.vo-benefits-marquee__slide {
+    flex-shrink: 0;
+    display: flex;
+    animation: translate-infinite var(--marquee-duration) linear infinite;
+    gap: 30px
+}
+
+@media (min-width:1000px) {
+    .vo-benefits-marquee__slide {
+        gap: 45px
+    }
+}
+
+.vo-benefits-marquee__item {
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 16px
+}
+
+@media (min-width:1000px) {
+    .vo-benefits-marquee__item {
+        gap: 19px
+    }
+}
+
+.vo-benefits-marquee__text {
+    font-size: 20px;
+    line-height: 120.5%;
+    font-family: ClashGrotesk, sans-serif;
+    font-family: var(--heading-font-family);
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: .2px;
+    color: #fff;
+    color: var(--white);
+    white-space: nowrap
+}
+
+@media (min-width:1000px) {
+    .vo-benefits-marquee__text {
+        font-size: 26px;
+        letter-spacing: .26px
+    }
+}
+
+.vo-benefits-marquee__icon {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+@media (min-width:1000px) {
+    .vo-benefits-marquee__icon {
+        width: 50px;
+        height: 50px
+    }
+}
+
+@keyframes translate-infinite {
+    to {
+        transform: translateX(-100%)
+    }
+    0% {
+        transform: translateX(0)
+    }
+}
+
+:root {
+    --xxxs: 320px;
+    --xxs: 445px;
+    --xs: 620px;
+    --s: 768px;
+    --ms: 840px;
+    --m: 1024px;
+    --ml: 1160px;
+    --l: 1280px;
+    --xl: 1440px;
+    --xxl: 1800px;
+    --black: #000;
+    --white: #fff;
+    --yellow: #ffc629;
+    --yellow-30: #ffeab0;
+    --yellow-10: #fff9ea;
+    --blue: #59c8e6;
+    --blue-30: #bce9f5;
+    --blue-10: #e6f7fb;
+    --light-gray: #f2f2f2;
+    --medium-gray: #d9d8d6;
+    --error-red: #eb0916;
+    --white-30: hsla(0, 0%, 100%, 0.3);
+    --white-80: hsla(0, 0%, 100%, 0.8);
+    --black-30: rgba(0, 0, 0, 0.3);
+    --black-70: rgba(0, 0, 0, 0.7);
+    --black-75: rgba(0, 0, 0, 0.75);
+    --black-10: rgba(0, 0, 0, 0.1);
+    --account-content-box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.08);
+    --duration: 0.25s;
+    --ease: ease-in-out;
+    --transition-default: 0.25s ease-in-out;
+    --transition-default: var(--duration) var(--ease);
+    --heading-font-family: "ClashGrotesk", sans-serif;
+    --body-font-family: "Barlow", sans-serif;
+    --button-font-family: "Bungee", sans-serif;
+    --swiper-theme-color: #ffc629;
+    --swiper-theme-color: var(--yellow);
+    --above-all: 2147483005
+}
